@@ -1,0 +1,12 @@
+father(X, miaGraceTindall)
+{"{'X': 'mikeTindall'}"}
+
+husband(X, camillaParkerBowles)
+{"{'X': 'princeCharles'}"}
+
+mother(X, princeCharles)
+{"{'X': 'queenElizabethII'}"}
+
+wife(princessAnne, captainMarkPhillips)
+{'false'}
+
