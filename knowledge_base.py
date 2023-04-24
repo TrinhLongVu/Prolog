@@ -27,7 +27,7 @@ class knowledge_base:
         self.rules.append(rule)
 
     def querry(self, q):
-        return forward_chain.forward_chain(self, q)
+        return forward_chain.ForwardChain(self, q)
 
     def addFacts(self, facts):
         for fact in facts:

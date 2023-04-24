@@ -1,0 +1,72 @@
+'who is husband of Prince Harry ?' .
+false.
+
+'who is wife of Mike Tindall ?'.
+Zara Phillips
+true.
+
+'who is father of Zara Phillips ?'.
+Captain Mark Phillips
+true.
+
+'Who is mother of Prince Andrews ?'.
+Kate Middleton
+true.
+
+'who is children of Prince Charles ?'.
+[Prince William,Prince Harry]
+true.
+
+'who is son of Queen Elizabeth II ?'.
+[Prince Charles,Prince Andrew,Prince Edward]
+true.
+
+'who is daughter of Prince Phillip ?'.
+[Princess Anne]
+true.
+
+'Was Prince Charles the son of Prince Phillip ?'.
+true.
+
+'Was Queen Elizabeth the wife of Mia Grace Tindall ?'.
+false.
+
+'who is grandparent of Mia Grace Tindall ?'.
+[Captain Mark Phillips,Princess Anne]
+true.
+
+'Was Princess Anne the grandParent of Mia Grace Tindall ?' .
+true .
+
+'who is grandmother of Mia Grace Tindall ?'.
+Princess Anne
+true.
+
+'who is grandfather of Isla Phillips ?'.
+Captain Mark Phillips
+true.
+
+'who is sibling of Viscount Severn ?'.
+[Lady Louise Mountbatten-Windsor,Lady Louise Mountbatten-Windsor]
+true.
+
+'Was Prince Andrew the sibling of Princess Anne ?'.
+true .
+
+'who is the brother of Princess Anne ?'.
+[Prince Charles,Prince Andrew,Prince Edward,Prince Charles,Prince Andrew,Prince Edward]
+true.
+
+'who is the brother of Prince William ?' .
+[Prince Harry,Prince Harry]
+true.
+
+'Was Prince Andrew the brother of Princess Anne'.
+true .
+
+'who is the sister of Prince Andrew ?'.
+[Princess Anne,Princess Anne]
+true.
+
+'Was Princess Anne the sister of Prince William ?'.
+false.

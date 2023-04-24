@@ -34,13 +34,12 @@ def run():
     querry = list(querry)
 
     for i in range(len(querry)):
-        theta = forward_chain.forward_chain(kb, querry[i])
+        theta = forward_chain.ForwardChain(kb, querry[i])
         output.write(str(querry[i]))
         output.write('\n')
         output.write(str(theta))
         output.write('\n')
         output.write('\n')
-
 
 if __name__ == "__main__":
     run()
