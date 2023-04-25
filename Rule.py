@@ -1,4 +1,4 @@
-from Fact import Fact
+from fact import Fact
 
 class Rule:
     def __init__(self, result, premises, conditions=[]):
@@ -11,16 +11,16 @@ class Rule:
             self.opers.add(premise.oper)
 
         self.premises.sort()
-        self.dup_pred = False
+        self.dupPred = False
         for i in range(len(self.premises)-1):
             if self.premises[i].oper == self.premises[i+1].oper:
-                self.dup_pred = True
+                self.dupPred = True
                 break
 
     def __repr__(self):
         return '{} => {}, conditions:{}.'.format(' & '.join([str(cond) for cond in self.premises]), str(self.result), str(self.conditions))
 
-    def process_condition(string):
+    def ProcessCondition(string):
         if ',' in string:
             conditions = string.split(',')
         else:
@@ -39,26 +39,26 @@ class Rule:
         return result
 
     @staticmethod
-    def parse_rule(rule):
+    def ParseRule(rule):
         rule = rule.replace(' ', '')
         rule = rule.replace('.', '')
-        sep_id = rule.find(':-')
-        concludsion = Fact.parse_fact(rule[:sep_id])
+        sepId = rule.find(':-')
+        concludsion = Fact.ParseFact(rule[:sepId])
         premises = []
         conditions = []
-        list_premises = rule[sep_id+2:].split('),')
+        listPremises = rule[sepId+2:].split('),')
 
-        if '=' in list_premises[-1]:
-            conditions = Rule.process_condition(list_premises[-1])
-            list_premises = list_premises[:-1]
+        if '=' in listPremises[-1]:
+            conditions = Rule.ProcessCondition(listPremises[-1])
+            listPremises = listPremises[:-1]
 
-            for i in range(len(list_premises)):
-                list_premises[i] = list_premises[i] + ')'
+            for i in range(len(listPremises)):
+                listPremises[i] = listPremises[i] + ')'
         else:
-            for i in range(len(list_premises[:-1])):
-                list_premises[i] = list_premises[i] + ')'
+            for i in range(len(listPremises[:-1])):
+                listPremises[i] = listPremises[i] + ')'
 
-        for premise in list_premises:
-            premises.append(Fact.parse_fact(premise))
+        for premise in listPremises:
+            premises.append(Fact.ParseFact(premise))
 
         return Rule(concludsion, premises, conditions)

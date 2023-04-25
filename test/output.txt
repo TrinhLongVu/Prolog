@@ -1,12 +1,60 @@
-wife(princessAnne, captainMarkPhillips)
+brother(princeAndrew, princessAnne)
 {'false'}
 
-father(X, miaGraceTindall)
-{"{'X': 'mikeTindall'}"}
+father(Father, zaraPhillips)
+{"{'Father': 'captainMarkPhillips'}"}
 
-husband(X, camillaParkerBowles)
-{"{'X': 'princeCharles'}"}
+child(Child, princeCharles)
+{"{'Child': 'princeHarry'}", "{'Child': 'princeWilliam'}"}
 
-mother(X, princeCharles)
-{"{'X': 'queenElizabethII'}"}
+mother(Mother, princeGeorge)
+{"{'Mother': 'kateMiddleton'}"}
+
+grandparent(GrandParent, miaGraceTindall)
+{"{'GrandParent': 'captainMarkPhillips'}", "{'GrandParent': 'princessAnne'}"}
+
+grandmother(Grandmother, miaGraceTindall)
+{"{'Grandmother': 'princessAnne'}"}
+
+sister(princessAnne, princeWilliam)
+{'false'}
+
+son(Son, queenElizabethII)
+{"{'Son': 'princeCharles'}", "{'Son': 'princeEdward'}", "{'Son': 'princeAndrew'}"}
+
+husband(Husband, princeHarry)
+{'false'}
+
+daughter(Daughter, princePhillip)
+{"{'Daughter': 'princessAnne'}"}
+
+sibling(Sibling, jamesviscountSevern)
+{"{'Sibling': 'ladyLouiseMountbattenWindsor'}"}
+
+brother(Brother, princessAnne)
+{"{'Brother': 'princeAndrew'}", "{'Brother': 'princeCharles'}", "{'Brother': 'princeEdward'}"}
+
+wife(Wife, mikeTindall)
+{"{'Wife': 'zaraPhillips'}"}
+
+brother(Brother, princeWilliam)
+{"{'Brother': 'princeHarry'}"}
+
+son(princeCharles, princePhillip)
+{'true'}
+
+sibling(princeAndrew, princessAnne)
+{'true'}
+
+grandfather(Grandfather, islaPhillips)
+{"{'Grandfather': 'captainMarkPhillips'}"}
+
+sister(Sister, princeAndrew)
+{"{'Sister': 'princessAnne'}"}
+
+married(queenElizabethII, miaGraceTindall)
+{'false'}
+
+grandparent(princessAnne, miaGraceTindall)
+{'true'}
 

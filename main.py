@@ -1,19 +1,19 @@
-from knowledge_base import knowledge_base
+from knowledge_base import KnowledgeBase
 import forward_chain
-from Rule import Fact
+from rule import Fact
 
-def run():
-    def ReadFile(file_name):
-        f = open(file_name, 'r')
+def Run():
+    def ReadFile(fileName):
+        f = open(fileName, 'r')
         return f.readlines()
 
-    def getType(sent_str):
-        sent_str = sent_str.strip()
-        if not sent_str:
+    def GetType(sentStr):
+        sentStr = sentStr.strip()
+        if not sentStr:
             return 'blank'
-        if sent_str.startswith('/*') and sent_str.endswith('*/'):
+        if sentStr.startswith('/*') and sentStr.endswith('*/'):
             return 'comment'
-        if ':-' in sent_str:
+        if ':-' in sentStr:
             return 'rule'
         return 'fact'
 
@@ -22,24 +22,28 @@ def run():
     querryDatas = ReadFile("test/query.pl")
 
     querry = set()
-    kb = knowledge_base(knowledgesData)
+    kb = KnowledgeBase(knowledgesData)
 
     for querryData in querryDatas:
         querryData = querryData[0:-1]
-        type = getType(querryData)
+        type = GetType(querryData)
         if type == 'fact':
-            fact = Fact.parse_fact(querryData)
+            fact = Fact.ParseFact(querryData)
             querry.add(fact)
 
     querry = list(querry)
 
-    for i in range(len(querry)):
-        theta = forward_chain.ForwardChain(kb, querry[i])
-        output.write(str(querry[i]))
+    for que in querry:
+        answer=forward_chain.ForwardChain(kb,que)
+        print(que)
+        print(answer)
+
+        output.write(str(que))
         output.write('\n')
-        output.write(str(theta))
+        output.write(str(answer))
         output.write('\n')
         output.write('\n')
 
+
 if __name__ == "__main__":
-    run()
+    Run()

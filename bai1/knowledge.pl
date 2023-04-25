@@ -109,11 +109,3 @@ niece(Person, AuntUncle) :- uncle(AuntUncle, Person), male(Person).
 niece(Person, AuntUncle) :- aunt(AuntUncle, Person), male(Person).
 nephew(Person, AuntUncle) :- uncle(AuntUncle, Person), female(Person).
 nephew(Person, AuntUncle) :- aunt(AuntUncle, Person), female(Person).
-
-
-
-
-
-
-
-

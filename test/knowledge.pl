@@ -1,145 +1,113 @@
-/**parent*/
-
-/**The he 1*/
-parent(queenElizabethII,princeCharles).
-parent(princePhillip,princeCharles).
-parent(queenElizabethII,princessAnne).
-parent(princePhillip,princessAnne).
-parent(queenElizabethII,princeAndrew).
-parent(princePhillip,princeAndrew).
-parent(queenElizabethII,princeEdward).
-parent(princePhillip,princeEdward).
-
-/**The he 2*/
-parent(princessDiana,princeWilliam).
-parent(princeCharles,princeWilliam).
-parent(camillaParkerBowles,princeWilliam).
-parent(princessDiana,princeHarry).
-parent(princeCharles,princeHarry).
-parent(camillaParkerBowles,princeHarry).
-
-parent(captainMarkPhillips,peterPhillips).
-parent(princessAnne,peterPhillips).
-parent(timothyLaurence,peterPhillips).
-parent(captainMarkPhillips,zaraPhillips).
-parent(princessAnne,zaraPhillips).
-parent(timothyLaurence,zaraPhillips).
-
-parent(sarahFerguson,princessBeatrice).
-parent(princeAndrew,princessBeatrice).
-parent(sarahFerguson,princessEugenie).
-parent(princeAndrew,princessEugenie).
-
-parent(sophieRhys-jones,jamesViscountSevern).
-parent(princeEdward,jamesViscountSevern).
-parent(sophieRhys-jones,ladyLouiseMountbatten_Windsor).
-parent(princeEdward,ladyLouiseMountbatten_Windsor).
-
-/**The he 3*/
-parent(princeWilliam,princeGeorge).
-parent(kateMiddleton,princeGeorge).
-parent(princeWilliam,princessCharlotte).
-parent(kateMiddleton,princessCharlotte).
-
-parent(autumnKelly,savannahPhillips).
-parent(peterPhillips,savannahPhillips).
-parent(autumnKelly,islaPhillips).
-parent(peterPhillips,islaPhillips).
-
-parent(zaraPhillips,miaGraceTindall).
-parent(mikeTindall,miaGraceTindall).
-
-
-/**male*/
 male(princePhillip).
-male(princeCharles).
-male(captainMarkPhillips).
-male(timothyLaurence).
 male(princeAndrew).
 male(princeEdward).
 male(princeWilliam).
+male(captainMarkPhillips).
+male(timothyLaurence).
+male(princeCharles).
 male(princeHarry).
 male(peterPhillips).
 male(mikeTindall).
-male(jamesViscountSevern).
+male(jamesviscountSevern).
 male(princeGeorge).
 male(miaGraceTindall).
 
-
-/**female*/
 female(queenElizabethII).
-female(princessDiana).
 female(camillaParkerBowles).
+female(ladyDianaSpencer).
 female(princessAnne).
 female(sarahFerguson).
-female(sophieRhys-jones).
+female(sophieRhysJones).
 female(kateMiddleton).
+female(princessDiana).
 female(autumnKelly).
 female(zaraPhillips).
 female(princessBeatrice).
-female(princessEugenie).
-female(ladyLouiseMountbatten_Windsor).
 female(princessCharlotte).
 female(savannahPhillips).
 female(islaPhillips).
+female(princessEugenie).
+female(ladyLouiseMountbattenWindsor).
 
+married(queenElizabethII, princePhillip).
+married(princePhillip, queenElizabethII).
+married(princeCharles, camillaParkerBowles).
+married(camillaParkerBowles, princeCharles).
+married(princessAnne, timothyLaurence).
+married(timothyLaurence, princessAnne).
+married(sophieRhysJones, princeEdward).
+married(princeEdward, sophieRhysJones).
+married(princeWilliam, kateMiddleton).
+married(kateMiddleton, princeWilliam).
+married(autumnKelly, peterPhillips).
+married(peterPhillips, autumnKelly).
+married(zaraPhillips, mikeTindall).
+married(mikeTindall, zaraPhillips).
 
-/**married*/
-married(queenElizabethII,princePhillips).
-married(princePhillips,queenElizabethII).
+divorced(princeCharles, princessDiana).
+divorced(princessDiana, princeCharles).
+divorced(captainMarkPhillips, princessAnne).
+divorced(princessAnne, captainMarkPhillips).
+divorced(sarahFerguson, princeAndrew).
+divorced(princeAndrew, sarahFerguson).
 
-married(princeCharles,camillaParkerBowles).
-married(camillaParkerBowles,princeCharles).
+parent(princeWilliam,princeGeorge).
+parent(princeWilliam,princessCharlotte).
+parent(kateMiddleton,princeGeorge).
+parent(kateMiddleton,princessCharlotte).
+parent(autumnKelly,savannahPhillips).
+parent(autumnKelly,islaPhillips).
+parent(peterPhillips,savannahPhillips).
+parent(peterPhillips,islaPhillips).
+parent(zaraPhillips,miaGraceTindall).
+parent(mikeTindall,miaGraceTindall).
+parent(princessDiana,princeWilliam).
+parent(princessDiana,princeHarry).
+parent(princeCharles,princeWilliam).
+parent(princeCharles,princeHarry).
+parent(captainMarkPhillips,peterPhillips).
+parent(captainMarkPhillips,zaraPhillips).
+parent(princessAnne,peterPhillips).
+parent(princessAnne,zaraPhillips).
+parent(sarahFerguson,princessBeatrice).
+parent(princeAndrew,princessBeatrice).
+parent(princeAndrew,princessEugenie).
+parent(sophieRhysJones,jamesviscountSevern).
+parent(sophieRhysJones,ladyLouiseMountbattenWindsor).
+parent(princeEdward,jamesviscountSevern).
+parent(princeEdward,ladyLouiseMountbattenWindsor).
+parent(queenElizabethII,princeCharles).
+parent(queenElizabethII,princessAnne).
+parent(queenElizabethII,princeAndrew).
+parent(queenElizabethII,princeEdward).
+parent(princePhillip,princeCharles).
+parent(princePhillip,princessAnne).
+parent(princePhillip,princeAndrew).
+parent(princePhillip,princeEdward).
 
-married(princessAnne,timothyLaurence).
-married(timothyLaurence,princessAnne).
-
-married(sophieRhys-jones,princeEdward).
-married(princeEdward,sophieRhys-jones).
-
-married(princeWilliam,kateMiddleton).
-married(kateMiddleton,princeWilliam).
-
-married(autumnKelly,peterPhillips).
-married(peterPhillips,autumnKelly).
-
-married(zaraPhillips,mikeTindall).
-married(mikeTindall,zaraPhillips).
-
-/**divorced*/
-divorced(princessDiana,princeCharles).
-divorced(princeCharles,princessDiana).
-
-divorced(captainMarkPhillips,princessAnne).
-divorced(princessAnne,captainMarkPhillips).
-
-divorced(sarahFerguson,princeAndrew).
-divorced(princeAndrew,sarahFerguson).
-
-/**Dinh nghia cac vi tu*/
-husband(Person,Wife):-married(Person,Wife),male(Person).
-wife(Person,Husband):-married(Person,Husband),female(Person).
-father(Parent,Child):-parent(Parent,Child),male(Parent).
-mother(Parent,Child):-parent(Parent,Child),female(Parent).
-child(Child,Parent):-parent(Parent,Child).
+husband(Person, Wife) :- married(Person, Wife), male(Person).
+wife(Person, Husband) :- married(Person, Husband), female(Person).
+father(Parent, Child) :- parent(Parent, Child), male(Parent).
+mother(Parent, Child) :- parent(Parent, Child), female(Parent).
+child(Child, Parent) :- parent(Parent, Child).
 son(Child,Parent):-parent(Parent,Child),male(Child).
 daughter(Child,Parent):-parent(Parent,Child),female(Child).
-grandparent(GP,GC):-parent(X,GC),parent(GP,X).
-grandmother(GM,GC):-mother(X,GC),mother(GM,X).
-grandfather(GF,GC):-father(X,GC),father(GF,X).
-grandchild(GC,GP):-grandparent(GP,GC).
-grandson(GS,GP):-grandchild(GS,GP),male(GS).
-granddaughter(GD,GP):-grandchild(GD,GP),female(GD).
-sibling(Person1,Person2):-father(X,Person1),child(Person2,X),Person1\=Person2.
-brother(Person,Sibling):-sibling(Person,Sibling),male(Person).
-sister(Person,Sibling):-sibling(Person,Sibling),female(Person).
-aunt(Person,NieceNephew):-parent(X,NieceNephew),sibling(X,Person),female(Person).
-aunt(Person,NieceNephew):-parent(X,NieceNephew),brother(Y,X),wife(Person,Y).
-aunt(Person,NieceNephew):-married(NieceNephew,X),parent(Y,X),brother(Z,Y),wife(Person,Z).
-uncle(Person,NieceNephew):-parent(X,NieceNephew),sibling(X,Person),male(Person).
-uncle(Person,NieceNephew):-parent(X,NieceNephew),sister(Y,X),husband(Person,Y).
-uncle(Person,NieceNephew):-married(NieceNephew,X),parent(Y,X),sister(Z,Y),husband(Person,Z).
-niece(Person,AuntUncle):-aunt(AuntUncle,Person),female(Person).
-niece(Person,AuntUncle):-uncle(AuntUncle,Person),female(Person).
-nephew(Person,AuntUncle):-aunt(AuntUncle,Person),male(Person).
-nephew(Person,AuntUncle):-uncle(AuntUncle,Person),male(Person).
+
+grandparent(GP,GC) :- parent(GP,Parent), parent(Parent,GC).
+grandmother(GM,GC) :- grandparent(GM,GC), female(GM).
+grandfather(GF,GC) :- grandparent(GF,GC), male(GF).
+grandchild(GC,GP) :- grandparent(GP,GC).
+grandson(GS,GP) :- grandchild(GS,GP),male(GS).
+granddaughter(GD,GP) :- grandchild(GD,GP), female(GD).
+
+sibling(Person1, Person2) :- parent(Parent, Person1), parent(Parent, Person2), Person1 \= Person2.
+brother(Person, Sibling) :- sibling(Person, Sibling), male(Person).
+sister(Person, Sibling) :- sibling(Person, Sibling), female(Person).
+aunt(Person, NieceNephew) :- wife(Person, Uncle), brother(Uncle, Parent), parent(Parent, NieceNephew).
+aunt(Person, NieceNephew) :- sister(Person, Parent), parent(Parent, NieceNephew).
+uncle(Person, NieceNephew) :- husband(Person, Aunt), sister(Aunt, Parent), parent(Parent, NieceNephew).
+uncle(Person, NieceNephew) :-brother(Person, Parent),parent(Parent, NieceNephew).
+niece(Person, AuntUncle) :- aunt(AuntUncle, Person), male(Person).
+niece(Person, AuntUncle) :- uncle(AuntUncle, Person), male(Person).
+nephew(Person, AuntUncle) :- aunt(AuntUncle, Person), female(Person).
+nephew(Person, AuntUncle) :- uncle(AuntUncle, Person), female(Person).

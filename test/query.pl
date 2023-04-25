@@ -1,4 +1,20 @@
-husband(X,camillaParkerBowles).
-wife(princessAnne, captainMarkPhillips).
-father(X,miaGraceTindall).
-mother(X,princeCharles).
+husband(Husband, princeHarry).
+wife(Wife, mikeTindall).
+father(Father, zaraPhillips).
+mother(Mother, princeGeorge).
+child(Child, princeCharles).
+son(Son ,queenElizabethII).
+daughter(Daughter, princePhillip).
+son(princeCharles, princePhillip).
+married(queenElizabethII, miaGraceTindall).
+grandparent(GrandParent, miaGraceTindall).
+grandparent(princessAnne, miaGraceTindall).
+grandmother(Grandmother, miaGraceTindall).
+grandfather(Grandfather, islaPhillips).
+sibling(Sibling, jamesviscountSevern).
+sibling(princeAndrew, princessAnne).
+brother(Brother, princessAnne).
+brother(Brother, princeWilliam).
+brother(princeAndrew, princessAnne).
+sister(Sister, princeAndrew).
+sister(princessAnne, princeWilliam).

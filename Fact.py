@@ -25,12 +25,12 @@ class Fact:
         return hash(str(self))
 
     @staticmethod
-    def parse_fact(fact):
+    def ParseFact(fact):
         fact = fact.strip().rstrip('.').replace(' ', '')
-        sep_idx = fact.index('(')
-        op = fact[:sep_idx]
-        args = fact[sep_idx + 1 : -1].split(',')
+        sepIdx = fact.index('(')
+        op = fact[:sepIdx]
+        args = fact[sepIdx + 1 : -1].split(',')
         return Fact(op, args)
 
-    def copy(self):
+    def Copy(self):
         return Fact(self.oper, self.args.copy(), self.neg)

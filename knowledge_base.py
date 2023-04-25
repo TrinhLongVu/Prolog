@@ -1,8 +1,8 @@
-from Rule import Rule
-from Fact import Fact
+from rule import Rule
+from fact import Fact
 import forward_chain
 
-class knowledge_base:
+class KnowledgeBase:
     def __init__(self, strings):
         self.facts = set()
         self.rules = []
@@ -13,22 +13,22 @@ class knowledge_base:
                 continue
 
             elif ':-' in string:
-                rule = Rule.parse_rule(string)
-                self.addRule(rule)
+                rule = Rule.ParseRule(string)
+                self.AddRule(rule)
 
             elif not ':-' in string and '(' in string:
-                fact = Fact.parse_fact(string)
-                self.addFact(fact)
+                fact = Fact.ParseFact(string)
+                self.AddFact(fact)
 
-    def addFact(self, fact):
+    def AddFact(self, fact):
         self.facts.add(fact)
 
-    def addRule(self, rule):
+    def AddRule(self, rule):
         self.rules.append(rule)
 
-    def querry(self, q):
+    def Querry(self, q):
         return forward_chain.ForwardChain(self, q)
 
-    def addFacts(self, facts):
+    def AddFacts(self, facts):
         for fact in facts:
             self.facts.add(fact)
